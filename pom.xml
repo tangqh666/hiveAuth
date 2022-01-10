@@ -29,25 +29,25 @@
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
-            <version>3.0.0</version>
+            <version>3.3.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-hdfs -->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-hdfs</artifactId>
-            <version>3.0.0</version>
+            <version>3.3.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-mapreduce-client-core -->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-mapreduce-client-core</artifactId>
-            <version>3.0.0</version>
+            <version>3.3.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-auth -->
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-auth</artifactId>
-            <version>3.0.0</version>
+            <version>3.3.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-jdbc -->
         <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-jdbc -->
@@ -55,43 +55,43 @@
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-common</artifactId>
-            <version>2.1.1</version>
+            <version>3.1.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-metastore -->
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-metastore</artifactId>
-            <version>2.1.1</version>
+            <version>3.1.2</version>
         </dependency>
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-jdbc</artifactId>
-            <version>2.1.1</version>
+            <version>3.1.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-exec -->
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-exec</artifactId>
-            <version>2.1.1</version>
+            <version>3.1.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-service -->
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-service</artifactId>
-            <version>2.1.1</version>
+            <version>3.1.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-exec -->
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-exec</artifactId>
-            <version>2.1.1</version>
+            <version>3.1.2</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <version>1.2.9</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -117,7 +117,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
+                <version>3.8.1</version>
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
@@ -128,25 +128,23 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.6</version>
+<!--            <plugin>-->
+<!--                -->
 
-                <configuration>
-                    <warName>${project.artifactId}</warName>
-                    <webResources>
-                        <resource>
-                            <directory>src/main/resources/lib</directory>
-                            <targetPath>WEB-INF/lib</targetPath>
-                            <includes>
-                                <include>**/*.jar</include>
-                            </includes>
-                        </resource>
-                    </webResources>
+<!--                <configuration>-->
+<!--                    <warName>${project.artifactId}</warName>-->
+<!--                    <webResources>-->
+<!--                        <resource>-->
+<!--                            <directory>src/main/resources/lib</directory>-->
+<!--                            <targetPath>WEB-INF/lib</targetPath>-->
+<!--                            <includes>-->
+<!--                                <include>**/*.jar</include>-->
+<!--                            </includes>-->
+<!--                        </resource>-->
+<!--                    </webResources>-->
 
-                </configuration>
-            </plugin>
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
     </build>
     <profiles>
